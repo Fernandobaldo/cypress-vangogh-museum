@@ -28,7 +28,7 @@ describe('Verify the collection page', function () {
             .should('be.greaterThan', 700)
 
         homePage.selectPainting().click()
-        cy.get('section').contains(this.data.paintingName)
+        cy.get('section').contains(this.data.paintingName).should('be.visible')
 
 
         homePage.validatingPainting()

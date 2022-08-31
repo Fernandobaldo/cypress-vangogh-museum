@@ -8,8 +8,8 @@ describe('Verify the collection page', function () {
 
   it('navigate to collection page', () => {
     homePage.acceptCookie().click()
-    homePage.searchBtn().click
-    homePage.searchBtn2().click
+    homePage.searchBtn().click()
+    homePage.searchBtn2().click()
     cy.get('.heading-1')
       .should('have.text', 'Collectie')
     cy.url().should('include', 'collectie');

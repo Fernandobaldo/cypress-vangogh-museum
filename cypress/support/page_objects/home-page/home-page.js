@@ -10,11 +10,11 @@ class HomePage {
 
 
     searchBtn() {
-        return cy.contains('Kunst & Verhalen').click()
+        return cy.contains('Kunst & Verhalen')
     }
 
     searchBtn2() {
-        return cy.contains('Zoek in de collectie').click()
+        return cy.contains('Zoek in de collectie')
     }
 
     acceptCookie() {
